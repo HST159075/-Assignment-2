@@ -1,3 +1,4 @@
+ HEAD
 HEAD
 Vehicle Rental System
 _____________________
@@ -33,3 +34,6 @@ Live Deployment:
 =======
 # -Assignment-2
  b12e808 (Initial commit)
+=======
+Project Name:- Vehicle Rental System
+ de8269d (Update project name in README)
