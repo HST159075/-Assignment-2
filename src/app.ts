@@ -8,14 +8,18 @@ dotenv.config();
 const app: Express = express();
 
 app.use(express.json());
+
+
+app.get("/", (req, res) => {
+  res.send("Server is running! Welcome to API.");
+});
+
 app.use("/api/v1/auth", authRoutes);
 app.use("/api/v1/vehicles", vehicleRoutes);
 
 
-
-
 app.use((req, res) => {
-  res.status(404).json({ success: true, message: "Route ROO not found" });
+  res.status(404).json({ success: false, message: "Route not found" });
 });
 
 
