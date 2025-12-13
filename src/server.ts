@@ -1,5 +1,5 @@
 import app from "../../b6a2/src/app";
-import dotenv from "dotenv";
+import * as dotenv from "dotenv";
 
 dotenv.config();
 

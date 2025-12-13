@@ -4,11 +4,13 @@
     // File Layout
     "rootDir": "./src",
     "outDir": "./dist",
+    "strict": true,
+    "esModuleInterop": true,
 
     // Environment Settings
     // See also https://aka.ms/tsconfig/module
-    "module": "nodenext",
-    "target": "esnext",
+    "module": "commonjs",
+    "target": "ES2020",
     "types": [],
     // For nodejs:
     // "lib": ["esnext"],
@@ -33,8 +35,7 @@
     // "noPropertyAccessFromIndexSignature": true,
 
     // Recommended Options
-    "strict": true,
-    "jsx": "react-jsx",
+    // "jsx": "react-jsx",
     // "verbatimModuleSyntax": false,
     "isolatedModules": true,
     "noUncheckedSideEffectImports": true,
