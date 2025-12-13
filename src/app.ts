@@ -1,8 +1,7 @@
 import express, { Express } from "express";
 import dotenv from "dotenv";
-import authRoutes from "./modules/auth/auth.route";
-
-import vehicleRoutes from "./modules/vehicle/vehicle.route";
+import authRoutes from "../src/modules/auth/auth.route";
+import vehicleRoutes from "../src/modules/vehicle/vehicle.route";
 
 dotenv.config();
 
