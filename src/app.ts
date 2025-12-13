@@ -15,7 +15,7 @@ app.use("/api/v1/vehicles", vehicleRoutes);
 
 
 app.use((req, res) => {
-  res.status(404).json({ success: false, message: "Route not found" });
+  res.status(404).json({ success: true, message: "Route ROO not found" });
 });
 
 
