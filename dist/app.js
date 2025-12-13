@@ -10,14 +10,11 @@ const vehicle_route_1 = __importDefault(require("../src/modules/vehicle/vehicle.
 dotenv_1.default.config();
 const app = (0, express_1.default)();
 app.use(express_1.default.json());
-// রুট সেটআপ
 app.get("/", (req, res) => {
     res.send("Server is running! Welcome to API.");
 });
-// মডিউল রাউট
 app.use("/api/v1/auth", auth_route_1.default);
 app.use("/api/v1/vehicles", vehicle_route_1.default);
-// 404 হ্যান্ডলার
 app.use((req, res) => {
     res.status(404).json({ success: false, message: "Route not found" });
 });
