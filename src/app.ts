@@ -11,7 +11,7 @@ app.use(express.json());
 
 
 app.get("/", (req, res) => {
-  res.send("Server is running! Welcome to API.");
+  res.send("Vehical Rantel Server is running! >>> Welcome to MY API.");
 });
 
 app.use("/api/v1/auth", authRoutes);
