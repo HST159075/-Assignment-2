@@ -2,6 +2,8 @@ import express, { Express } from "express";
 import dotenv from "dotenv";
 import authRoutes from "../src/modules/auth/auth.route";
 import vehicleRoutes from "../src/modules/vehicle/vehicle.route";
+import bookingRoutes from "../src/modules/bookings/booking.route"
+import usersRoutes from "../src/modules/users/user.route"
 
 dotenv.config();
 
@@ -16,6 +18,8 @@ app.get("/", (req, res) => {
 
 app.use("/api/v1/auth", authRoutes);
 app.use("/api/v1/vehicles", vehicleRoutes);
+app.use("/api/v1/bookings", bookingRoutes);
+app.use("/api/v1/users", usersRoutes)
 
 
 app.use((req, res) => {
